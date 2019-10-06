@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<!-- The head tag consists of the the charset defined for the document, page title and the style sheets used -->
+	<head>
+		<meta charset="UTF-8">
+		<title>BunBun Bake Shop</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Acme|Cabin|Dosis|Fira+Sans:400,700,800|Heebo|Noto+Sans|Pacifico|PT+Sans|Roboto|Roboto+Condensed|Shadows+Into+Light|Ubuntu|Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+		<div class = "icon-bar">
+			<!-- Main navigation bar for each page -->
+			<div class = "logo">
+				<a href = "HomePage.html">Bunbun Bake Shop</a>
+			</div>
+			<a class = "active" href = "HomePage.html">Home</a>
+			<!-- Navigates to the About us section -->
+			<a href = "AboutUs.html#about-us">About Us</a> 
+			<!-- Navigates to the Locations sections -->
+			<a href = "Locations.html#locations">Locations</a>
+			<a href = "ProductsPage.html">Our Products</a>
+		</div>
+
+		<div class = "bannerImage">
+			<!-- The Banner Image originally designed as a Carousel but because of just using CSS and HTML left it to only one image -->
+			<img src = "BBCS1_edited.jpg" alt = "banner image">
+		</div>
+
+		<div id = "about-us">
+			<!-- The About Us section contains a statement from the owner -->
+			<div class="title">
+				About Us
+			</div>
+			<!-- Products from the bakery images displayed on both the side of the text -->
+			<img class = "floatLeft sideImage" src = "cinnamon-roll.jpeg" alt = "about us image 1">
+			<img class = "floatRight sideImage" src = "cinnamon-roll-2.jpeg" alt = "about us image 2">
+			<div class = "text">
+				<em>"Starting out as a bakery from our home ten years ago, we have expanded to open four stores in Pittsburgh now. Our goal has always been to make best-quality handcrafted and personalized cinnmamon buns and cater to our customers the best way we can."</em> <strong>- Patty White, Founder and Owner. </strong>
+			</div>
+		</div>
+
+		<div id = "locations">
+			<!-- Details about the locations of all the shops -->
+			<div class="title">
+				Locations
+			</div>
+			<div class = "subText">
+				We have stores in four different locations across Pitssburgh
+			</div>
+			<div class="row">
+			  <div class="columnGrid">
+			    <div class="content">
+			      <img class = "thumbnail" src="Bloomfield.jpeg" alt = "Bloomfield">
+			      <h3>256, XYZ Street, Bloomfield</h3>
+			    </div>
+			  </div>
+			  <div class="columnGrid">
+			    <div class="content">
+			      <img class = "thumbnail" src="download.jpeg" alt = "Forbes Ave">
+			      <h3>1234 Forbes Avenue, Downtown</h3>
+			    </div>
+			  </div>
+			  <div class="columnGrid">
+			    <div class="content">
+			      <img class = "thumbnail" src="point-breeze.jpeg" alt = "Point Breeze">
+			      <h3>221 ABC Road, Point Breeze</h3>
+			    </div>
+			  </div>
+			  <div class="columnGrid">
+			    <div class="content">
+			      <img class = "thumbnail" src="images.jpeg" alt = "HomesteadDrive">
+			      <h3>3341 Homestead Drive</h3>
+			    </div>
+			  </div>
+			</div>
+		</div>
+	</body>
+</html>
