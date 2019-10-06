@@ -1,5 +1,5 @@
 This project consists of the following html and css pages that form the website for BunBun Bake Shop. 
-index.html - The Home page or primary landing page.
+HomePage.html - The Home page or primary landing page.
 AboutUs.html - Linked to the About Us page [Extra Page]
 Locations.html - Linked to the page displaying the locations of the stores. [Extra Page]
 ProductsPage.html - Displays all the products available
