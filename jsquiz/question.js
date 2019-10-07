@@ -5,7 +5,7 @@ class Question {
         this.answer = answer;
     }
     isCorrectAnswer(choice){
-   			 return this.answer === choice;
+	return this.answer === choice;
     }
 
 }
@@ -57,3 +57,5 @@ var questions = [
     new Question("What has not been covered in PUI lab?", ["HTML", "CSS","Javascript", "Java"], "Java"),
 ];
 
+var quiz = new Quiz(questions);
+populate();
