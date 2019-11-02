@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<!-- The head tag consists of the the charset defined for the document, page title and the style sheets used -->
+	<head>
+		<meta charset="UTF-8">
+		<title>BunBun Bake Shop</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Acme|Cabin|Dosis|Fira+Sans:400,700,800|Heebo|Noto+Sans|Pacifico|PT+Sans|Roboto|Roboto+Condensed|Shadows+Into+Light|Ubuntu|Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+	</head>
+
+	<body onload = "display_count();populate_carouesel();showSlides();">
+		<div class = "icon-bar">
+			<!-- Main navigation bar for each page -->
+			<div class = "logo">
+				<a href = "HomePage.html">Bunbun Bake Shop</a>
+			</div>
+			<a class = "active" href = "HomePage.html">Home</a>
+			<!-- Navigates to the About us section -->
+			<a href = "AboutUs.html#about-us">About Us</a> 
+			<!-- Navigates to the Locations sections -->
+			<a href = "Locations.html#locations">Locations</a>
+			<a href = "ProductsPage.html">Our Products</a>
+			<!-- Navigates to the shopping cart page -->
+			<div class = "shoppingCart">
+				<a href = "ShoppingCart.html">Cart</a>
+				<div id = displayCount>0</div>
+				<img class = "cart"  onclick="openNav()" src = "images/shopping cart.png" alt = "shopping cart">
+			</div>
+		</div>
+		
+		<!-- Shopping cart carousel/sidebar -->
+		<div id = "SideBar" class = "sidebar">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+			<div class = "cart-title">Shopping Cart</div>s
+			<div id = "cart-items"></div>
+			<!-- <div class = "item"> 
+				<img class = "item-img">
+				<div class = "cart-content">
+					<div class = "product-name"></div>
+					<div class = "glaze-name"></div>
+					<div class = "quantity-total"></div>
+				</div>
+			</div> -->
+		</div>
+
+		<!-- content of the page -->
+		<div id = "main">
+			<div class = "bannerImage">
+				<!-- Image Carouesel -->
+				<div class="mySlides fade">
+				    <!-- <div class="numbertext">1 / 3</div> -->
+				    <img class = "bannerImage" src = "images/BBCS1_edited.jpg" alt = "banner image">
+				</div>
+				<div class="mySlides fade">
+				    <!-- <div class="numbertext">2 / 3</div> -->
+				    <img class = "bannerImage" src = "images/cinnamon roll 2.jpeg" alt = "banner image">
+				</div>
+				<div class="mySlides fade">
+				    <!-- <div class="numbertext">3 / 3</div> -->
+				    <img class = "bannerImage" src = "images/cinnamon roll 3.jpeg" alt = "banner image">
+				</div>
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+
+			<div id = "about-us">
+				<!-- The About Us section contains a statement from the owner -->
+				<div class="title">
+					About Us
+				</div>
+				<!-- Products from the bakery images displayed on both the side of the text -->
+				<img class = "floatLeft sideImage" src = "images/cinnamon-roll.jpeg" alt = "about us image 1">
+				<img class = "floatRight sideImage" src = "images/cinnamon-roll-2.jpeg" alt = "about us image 2">
+				<div class = "text">
+					<em>"Starting out as a bakery from our home ten years ago, we have expanded to open four stores in Pittsburgh now. Our goal has always been to make best-quality handcrafted and personalized cinnmamon buns and cater to our customers the best way we can."</em> <strong>- Patty White, Founder and Owner. </strong>
+				</div>
+			</div>
+
+			<div id = "locations">
+				<!-- Details about the locations of all the shops -->
+				<div class="title">
+					Locations
+				</div>
+				<div class = "subText">
+					We have stores in four different locations across Pitssburgh
+				</div>
+				<div class="row">
+				  <div class="columnGrid">
+				    <div class="content">
+				      <img class = "thumbnail" src="images/Bloomfield.jpeg" alt = "Bloomfield">
+				      <h3>256, XYZ Street, Bloomfield</h3>
+				    </div>
+				  </div>
+				  <div class="columnGrid">
+				    <div class="content">
+				      <img class = "thumbnail" src="images/download.jpeg" alt = "Forbes Ave">
+				      <h3>1234 Forbes Avenue, Downtown</h3>
+				    </div>
+				  </div>
+				  <div class="columnGrid">
+				    <div class="content">
+				      <img class = "thumbnail" src="images/point-breeze.jpeg" alt = "Point Breeze">
+				      <h3>221 ABC Road, Point Breeze</h3>
+				    </div>
+				  </div>
+				  <div class="columnGrid">
+				    <div class="content">
+				      <img class = "thumbnail" src="images/images.jpeg" alt = "HomesteadDrive">
+				      <h3>3341 Homestead Drive</h3>
+				    </div>
+				  </div>
+				</div>
+			</div>
+		</div>
+		<script src="js/main.js"></script>
+	</body>
+</html>

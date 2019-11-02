@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- The head tag consists of the the charset defined for the document, page title and the style sheets used -->
+		<meta charset="UTF-8">
+		<title>BunBun Bake Shop - Original</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Acme|Cabin|Dosis|Fira+Sans|Heebo|Noto+Sans|Pacifico|PT+Sans|Roboto|Roboto+Condensed|Shadows+Into+Light|Ubuntu|Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+	</head>
+	<body onload = "display_count();populate_carouesel();">
+		<div class = "icon-bar">
+			<!-- Main navigation bar for each page -->
+			<div class = "logo">
+				<a href = "HomePage.html">Bunbun Bake Shop</a>
+			</div>
+			<a href = "HomePage.html">Home</a>
+			<!-- Navigates to the About us section -->
+			<a href = "AboutUs.html#about-us">About Us</a> 
+			<!-- Navigates to the Locations sections -->
+			<a href = "Locations.html#locations">Locations</a>
+			<!-- Navigates to the shopping cart page -->
+			<div class = "shoppingCart">
+				<a href = "ShoppingCart.html">Cart</a>
+				<div id = displayCount>0</div>
+				<img class = "cart"  onclick="openNav()" src = "images/shopping cart.png" alt = "shopping cart">
+			</div>
+		</div>
+		
+		<!-- Shopping cart carousel/sidebar -->
+		<div id = "SideBar" class = "sidebar">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+			<div class = "cart-title">Shopping Cart</div>s
+			<div id = "cart-items"></div>
+			<!-- <div class = "item"> 
+				<img class = "item-img">
+				<div class = "cart-content">
+					<div class = "product-name"></div>
+					<div class = "glaze-name"></div>
+					<div class = "quantity-total"></div>
+				</div>
+			</div> -->
+		</div>
+
+		<!-- content of the page -->
+		<div id = "main">
+
+			<div class = "back-icon">
+				<!-- the back icon to navigate back to the Products page -->
+				<a class = "back-button" href = "ProductsPage.html">
+					<img src = "images/Arrow.jpg" alt = "arrow">
+					<h4 class = "back-button">Back</h4>
+				</a>
+			</div>
+
+			<!-- Product title -->
+			<div class = "title product-title">
+				Walnut
+			</div>
+
+			<div class = "details">
+				<!-- Shows the product details -->
+				<img class = "product" src = "images/Walnut.jpg" alt = "walnut">
+				<div class = "toppings">
+					<!-- Glaze options -->
+					<div class = "topping-name">
+						Glaze
+					</div>
+					<div>
+						<img id = "flavour-highlight-none" class = "flavour" onclick="highlight_glaze(this)" src = "images/None.png" alt = "None">
+						<img id = "flavour-highlight-vanilla" class = "flavour" onclick="highlight_glaze(this)" src = "images/Vanilla.png" alt = "Vanilla">
+						<img id = "flavour-highlight-sugar" class = "flavour" onclick="highlight_glaze(this)" src = "images/Sugar.png" alt = "Sugar">
+						<img id = "flavour-highlight-chocolate" class = "flavour" onclick="highlight_glaze(this)" src = "images/Chocolate.png" alt = "Chocolate">
+						<div class ="container-desc">
+							<div class = "caption product-desc">None</div>
+							<div class = "caption product-desc">Vanilla</div>
+							<div class = "caption product-desc">Sugar</div>
+							<div class = "caption product-desc">Chocolate</div>
+						</div>
+					</div>
+					<!-- Quantity options -->
+					<div class = "topping-name">
+						Quantity
+					</div>
+					<div>
+						<img id = "quantity-highlight-one" class = "flavour" onclick="highlight_qty(this)" src = "images/qty1.png" alt = "qty1">
+						<img id = "quantity-highlight-three" class = "flavour" onclick="highlight_qty(this)" src = "images/qty3.png" alt = "qty3">
+						<img id = "quantity-highlight-six" class = "flavour" onclick="highlight_qty(this)" src = "images/qty6.png" alt = "qty6">
+						<img id = "quantity-highlight-twelve" class = "flavour" onclick="highlight_qty(this)"src = "images/qty12.png" alt = "qty12">
+					</div>
+					<button id = "button" class = "button" onclick="counter();">
+						Add to Cart 
+					</button>
+					<div id="alert" class="alert-box">
+						<!-- Add to cart alert box content -->
+						<div class="alert-content">
+							<span class="close"></span>
+							<p>Added to cart!</p>
+						</div>
+					</div>		
+				</div>
+			</div>
+		</div>
+		<script src="js/main.js"></script>
+	</body>
+</html>

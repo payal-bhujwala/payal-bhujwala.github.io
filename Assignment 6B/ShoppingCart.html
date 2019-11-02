@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- The head tag consists of the the charset defined for the document, page title and the style sheets used -->
+		<meta charset="UTF-8">
+		<title>BunBun Bake Shop - Original</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Acme|Cabin|Dosis|Fira+Sans|Heebo|Noto+Sans|Pacifico|PT+Sans|Roboto|Roboto+Condensed|Shadows+Into+Light|Ubuntu|Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+	</head>
+
+	<body onload = "populate_cart_page();">
+		<div class = "icon-bar">
+			<!-- Main navigation bar for each page -->
+			<div class = "logo">
+				<a href = "HomePage.html">Bunbun Bake Shop</a>
+			</div>
+			<a href = "HomePage.html">Home</a>
+			<!-- Navigates to the About us section -->
+			<a href = "AboutUs.html#about-us">About Us</a> 
+			<!-- Navigates to the Locations sections -->
+			<a href = "Locations.html#locations">Locations</a>
+			<div class = "shoppingCart">
+				<!-- Active status for cart so it will be highlighted on the nav bar -->
+				<a class = "active" href = "ShoppingCart.html">Cart</a>
+			</div>
+		</div>
+
+		<div class = "back-icon">
+			<!-- the back icon to navigate back to the Products page -->
+			<a class = "back-button" href = "ProductsPage.html">
+				<img src = "images/Arrow.jpg" alt = "arrow">
+				<h4 class = "back-button">Back</h4>
+			</a>
+		</div>
+
+		<!-- Shopping Cart Page Details starts from here! -->
+		<div class = "title product-title">
+			Shopping Cart
+		</div>
+		<!-- Displays the image of the product, the glaze and the quantity chosen. -->
+		<div id = "shopping-cart-info"> 
+			<!-- <img class = "product-cart" src = "images/bun.jpg" alt = "cinnamon bun">
+			<div class = "toppings-cart">
+				<div class = "topping-name">
+					Glaze
+				</div>
+				<div class = "cart-details">
+					<img id = "flavour-highlight-vanilla" class = "flavour" src = "images/Vanilla(selected).png" alt = "Vanilla">
+					<div class ="container-desc">
+						<div class = "caption product-desc selected">Vanilla</div>
+					</div>
+				</div>
+				<div class = "topping-name">
+					Quantity
+				</div>
+				<div>
+					<img id = "quantity-highlight-three" class = "flavour" src = "images/3(selected).png" alt = "qty3">
+				</div>
+				<div class = "price">$4.80</div>
+				<img class = "delete-icon" src = "images/trashcan.jpg" alt = "delete">
+			</div> -->
+		</div>
+	</body>
+	<script src="js/main.js"></script>
+</html>
