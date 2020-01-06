@@ -1,0 +1,296 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Portfolio - Payal Bhujwala</title>
+		
+		<link rel="stylesheet" type="text/css" href="Assets/css/main.css">
+		<link rel="stylesheet" type="text/css" href="Assets/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="Assets/css/component.css">
+		
+	</head>
+	<body>
+		
+		<div class = "container-fluid">
+			<img class="logo" src="Assets/images/brand-logo.svg" alt="header logo">
+			<nav class="navbar navbar-expand-sm justify-content-center">
+				<ul class="navbar-nav nav-pills">
+					<li class="nav-item">
+					  <a class="nav-link active" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="work.html">Projects</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="about.html">About Me</a>
+					</li>
+				</ul>
+			</nav>
+			<ul class="grid effect-2" id="grid">
+				<div id = "fireworks"></div>
+				<li>
+					<div class="content">
+						<div class="content-overlay"></div>
+						<img class="content-image" src="Assets/images/project-of-the-month.png">
+						<div class="content-details fadeIn-left">
+							<h3 class="content-title">Project of the Month</h3>
+							<p class="content-text">Check out the project featured for this month!</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="content">
+						<div class="content-overlay"></div>
+							<img src="Assets/images/Persuasive Design.jpg">
+							<div class="content-details fadeIn-top">
+								<h3 class="content-title">After Us</h3>
+								<p class="content-text">A project with a persuasive goal?</p>
+							</div>
+					</div>
+				</li>
+				<li>
+					<div class="content">
+						<div class="content-overlay"></div>
+							<img src="Assets/images/skills.png">
+							<div class="content-details fadeIn-right">
+								<h3 class="content-title">Skills</h3>
+							</div>
+					</div>
+				</li>
+				<li>
+					<div class="content">
+						<div class="content-overlay"></div>
+							<img src="Assets/images/visual design.png">
+							<div class="content-details fadeIn-top">
+								<h3 class="content-title">Visual Design Skills</h3>
+							</div>
+					</div>
+				</li>
+				<li>
+					<div class="content">
+						<div class="content-overlay"></div>
+							<img src="Assets/images/IxD.png">
+							<div class="content-details fadeIn-left">
+								<h3 class="content-title">Control Redesign</h3>
+								<p class="content-text">Redesign of everyday things</p>
+							</div>
+					</div>
+				</li>
+				<li>
+					<div class="content">
+						<div class="content-overlay"></div>
+							<img src="Assets/images/Stock image 1.jpg">
+							<div class="content-details fadeIn-right">
+								<h3 class="content-title">Sample Project 1</h3>
+							</div>
+					</div>
+				</li>
+				<li>
+					<div class="content">
+						<div class="content-overlay"></div>
+							<img src="Assets/images/UCRE.jpg">
+							<div class="content-details fadeIn-top">
+								<h3 class="content-title">Art you Ready?</h3>
+								<p class="content-text">A project on increasing engagement with public art using technology</p>
+							</div>
+					</div>
+				</li>
+				<li>
+					<div class="content">
+						<div class="content-overlay"></div>
+							<img src="Assets/images/445821-PEVIPM-250.png">
+							<div class="content-details fadeIn-right">
+								<h3 class="content-title">Protyping Skills</h3>
+					</div>
+				</li>
+				<li>
+					<div class="content">
+						<div class="content-overlay"></div>
+							<img src="Assets/images/Resume (1).png">
+							<div class="content-details fadeIn-right">
+								<h3 class="content-title">Resume</h3>
+							</div>
+					</div>
+				</li>
+				<li>
+					<div class="content">
+						<div class="content-overlay"></div>
+							<img src="Assets/images/Stock image 2.jpg">
+							<div class="content-details fadeIn-top">
+								<h3 class="content-title">Sample Project 2</h3>
+							</div>
+					</div>
+				</li>
+				<li>
+					<div class="content">
+						<div class="content-overlay"></div>
+							<img src="Assets/images/developer.png">
+							<div class="content-details fadeIn-left">
+								<h3 class="content-title">Technical Skills</h3>
+							</div>
+					</div>
+				</li>
+				<div id = "fireworks"></div>
+			</ul>
+		</div>
+		<footer class = "footer">
+			<div class="footer-container">
+				<span class="footer-text">
+					<p class="margin-top margin-bottom">All Illustrations have been sourced from freepik.com </p>
+					<p class="margin-bottom">For links to my social media profiles click on the icons below</p>
+					<a href="https://www.facebook.com/payal4496?ref=bookmarks"><img class="social-image" src="Assets/images/facebook.png"></a>
+					<a href="https://www.instagram.com/shootforthestars_44/?hl=en"><img class="social-image" src="Assets/images/instagram.png"></a>
+					<a href="https://www.behance.net/payalmb962e79"><img class="social-image" src="Assets/images/behance.png"></a>
+					<a href="https://www.linkedin.com/in/payalbhujwala/"><img class="social-image" src="Assets/images/linkedin.png"></a>
+				</span>
+			</div>
+		</footer>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script src="Assets/js/AnimOnScroll.js"></script>
+		<script src="Assets/js/sketch.js"></script>
+		<script>
+			
+			//JS for fireworks animation
+			// ----------------------------------------
+			// Particle
+			// ----------------------------------------
+
+			function Particle( x, y, radius ) {
+				this.init( x, y, radius );
+			}
+
+			Particle.prototype = {
+
+				init: function( x, y, radius ) {
+
+					this.alive = true;
+
+					this.radius = radius || 10;
+					this.wander = 0.15;
+					this.theta = random( TWO_PI );
+					this.drag = 0.92;
+					this.color = '#fff';
+
+					this.x = x || 0.0;
+					this.y = y || 0.0;
+
+					this.vx = 0.0;
+					this.vy = 0.0;
+				},
+
+				move: function() {
+
+					this.x += this.vx;
+					this.y += this.vy;
+
+					this.vx *= this.drag;
+					this.vy *= this.drag;
+
+					this.theta += random( -0.5, 0.5 ) * this.wander;
+					this.vx += sin( this.theta ) * 0.1;
+					this.vy += cos( this.theta ) * 0.1;
+
+					this.radius *= 0.96;
+					this.alive = this.radius > 0.5;
+				},
+
+				draw: function( ctx ) {
+
+					ctx.beginPath();
+					ctx.arc( this.x, this.y, this.radius, 0, TWO_PI );
+					ctx.fillStyle = this.color;
+					ctx.fill();
+				}
+			};
+
+			// ----------------------------------------
+			// Example
+			// ----------------------------------------
+
+			var MAX_PARTICLES = 280;
+			var COLOURS = [ '#F58020', '#F05925', '#E23540', '#DB254C', '#B11E76', '#693691', '#055A97' ];
+
+			var particles = [];
+			var pool = [];
+
+			var demo = Sketch.create({
+				container: document.getElementById( 'fireworks' ),
+				retina: 'auto'
+			});
+
+			demo.setup = function() {
+
+				// Set off some initial particles.
+				var i, x, y;
+
+				for ( i = 0; i < 20; i++ ) {
+					x = ( demo.width * 0.5 ) + random( -100, 100 );
+					y = ( demo.height * 0.5 ) + random( -100, 100 );
+					demo.spawn( x, y );
+				}
+			};
+
+			demo.spawn = function( x, y ) {
+
+				var particle, theta, force;
+
+				if ( particles.length >= MAX_PARTICLES )
+					pool.push( particles.shift() );
+
+				particle = pool.length ? pool.pop() : new Particle();
+				particle.init( x, y, random( 5, 40 ) );
+
+				particle.wander = random( 0.5, 2.0 );
+				particle.color = random( COLOURS );
+				particle.drag = random( 0.9, 0.99 );
+
+				theta = random( TWO_PI );
+				force = random( 2, 8 );
+
+				particle.vx = sin( theta ) * force;
+				particle.vy = cos( theta ) * force;
+
+				particles.push( particle );
+			};
+
+			demo.update = function() {
+
+				var i, particle;
+
+				for ( i = particles.length - 1; i >= 0; i-- ) {
+
+					particle = particles[i];
+
+					if ( particle.alive ) particle.move();
+					else pool.push( particles.splice( i, 1 )[0] );
+				}
+			};
+
+			demo.draw = function() {
+
+				demo.globalCompositeOperation  = 'lighter';
+
+				for ( var i = particles.length - 1; i >= 0; i-- ) {
+					particles[i].draw( demo );
+				}
+			};
+
+			demo.mousemove = function() {
+
+				var particle, theta, force, touch, max, i, j, n;
+
+				for ( i = 0, n = demo.touches.length; i < n; i++ ) {
+
+					touch = demo.touches[i], max = random( 1, 4 );
+					for ( j = 0; j < max; j++ ) {
+					  demo.spawn( touch.x, touch.y );
+					}
+
+				}
+			};
+			new AnimOnScroll( document.getElementById( 'grid' ));
+		</script>
+	</body>
+</html>
