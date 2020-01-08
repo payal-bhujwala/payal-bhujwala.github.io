@@ -604,7 +604,7 @@ pre code {
   margin-left: auto;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 576px) {
   .container, .container-sm {
     max-width: 540px;
   }
@@ -614,6 +614,7 @@ pre code {
   }
 }
 
+/*
 @media (min-width: 576px) {
   .container, .container-sm {
     max-width: 540px;
@@ -623,6 +624,7 @@ pre code {
     padding-left: 50px;
   }
 }
+*/
 
 @media (min-width: 768px) {
   .container, .container-sm, .container-md {
