@@ -1,0 +1,216 @@
+@charset "UTF-8";
+
+@media (min-width: 576px){
+	.container {
+	  max-width: 540px; 
+	}
+	.grid li{
+		width: 50%;
+	}
+}
+@media (min-width: 768px) {
+	.container {
+	  max-width: 720px; 
+	} 
+}
+@media (min-width: 992px) {
+	.container {
+	  max-width: 960px; 
+	} 
+}
+@media (min-width: 1200px) {
+	.container {
+	  max-width: 1140px; 
+	} 
+}
+
+/*CSS for title logo*/
+.logo {
+	width: 100%;
+	height: 125px;
+}
+
+/*@media screen and (max-width: 640px) {
+  .container {
+    display: block;
+    width: 100%;
+  }
+}*/
+
+/*Start of Hover CSS*/
+
+.container .title {
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+/*  max-width: 400px;*/
+  margin: auto;
+  overflow: hidden;
+}
+
+.content .content-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay {
+  opacity: 1;
+}
+
+.content-image {
+  width: 100%;
+}
+
+.content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: -30px;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+}
+
+.content:hover .content-details {
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details h3 {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+}
+
+.content-details p {
+  color: #fff;
+  font-size: 0.8em;
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+}
+
+.fadeIn-bottom {
+  top: 80%;
+}
+
+.fadeIn-top {
+  top: 20%;
+}
+
+.fadeIn-left {
+  left: 20%;
+}
+
+.fadeIn-right {
+  left: 80%;
+}
+
+/*End of Hover CSS*/
+
+/*Start of Footer CSS*/
+
+.footer {
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 200px;
+  line-height: 50px; /* Vertically center the text there */
+  background-color: #ECD1F5;
+  text-align: center;
+}
+
+.footer-text {
+	color: #580873;
+	float: none;
+	align-content: center;
+	font-family: 'Helvetica', 'sans-serif';
+	font-weight: lighter;
+	font-size: 20px;
+}
+
+.social-image {
+	width: 50px;
+    height: 50px;
+    display: inline;
+	padding-left: 5px;
+}
+
+.margin-bottom {
+	margin-bottom: 0px;
+}
+
+.margin-top {
+	margin-top: 50px;
+}
+
+/*End of Footer*/
+
+.container {
+	margin-bottom: 250px;
+}
+
+@media (max-width: 576px){
+	.container {
+	  min-width: 540px; 
+	}
+	.logo {
+		height: 100px;
+	}
+}
+
+/*CSS for About me page*/
+.about-me {
+  display: inline-flex;
+  padding-left: 200px;
+}
+
+.size{
+  margin-left: 20px;
+  width: 400px;
+  height: 400px;
+}
+
+.nav-item {
+	text-align: center;
+}
+
+/*CSS for the typewriter text*/
+h4 {
+  text-align: center;
+  color: #2980b9;
+  padding-top:10em;
+  font-family: 'Helvetica', 'sans serif';
+  font-weight: lighter;
+  font-size: 25px;
+  padding-top: 0px;
+}
+
+.flex-class-2 {
+  display: block;
+}
