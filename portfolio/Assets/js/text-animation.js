@@ -1284,11 +1284,11 @@ const svgPath = document.querySelectorAll('.path');
 
 const svgText = anime({
   targets: svgPath,
-  loop: 1,
+  loop: 0,
   direction: 'normal',
   strokeDashoffset: [anime.setDashoffset, 0],
   easing: 'easeInOutSine',
-  duration: 500,
+  duration: 300,
   delay: (el, i) => { return i * 500 }
 });
 
@@ -1297,7 +1297,7 @@ var TxtType = function(el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
   this.loopNum = 0;
-  this.period = parseInt(period, 10) || 2000;
+  this.period = parseInt(period, 100) || 1000;
   this.txt = '';
   this.tick();
   this.isDeleting = false;
@@ -1316,17 +1316,18 @@ TxtType.prototype.tick = function() {
   this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
 
   var that = this;
-  var delta = 200 - Math.random() * 100;
+  var delta = 200 - Math.random() * 300;//speed of typing out text
 
   if (this.isDeleting) { delta /= 2; }
 
   if (!this.isDeleting && this.txt === fullTxt) {
+
   delta = this.period;
   this.isDeleting = true;
   } else if (this.isDeleting && this.txt === '') {
   this.isDeleting = false;
   this.loopNum++;
-  delta = 800;
+  delta = 1000;
   }
 
   setTimeout(function() {
@@ -1335,7 +1336,7 @@ TxtType.prototype.tick = function() {
 };
 
 window.onload = function() {
-  setTimeout('typewriter()',7000);
+  setTimeout('typewriter()',1500);//Time for text to appear 
 };
 
 function typewriter(){
@@ -1362,7 +1363,7 @@ $(document).ready(function() {
     $(".flex-class-2").fadeOut("slow");
     setTimeout(function(){
       window.location.href = "landing_page.html";
-    }, 700);
+    }, 500);
   });
 });
 
