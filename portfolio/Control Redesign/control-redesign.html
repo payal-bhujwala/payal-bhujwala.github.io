@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Control Redesign</title>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<link href="../Assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="../Assets/css/control-redesign.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Lato|Open+Sans|Oswald|PT+Sans:400,700|Raleway|Roboto|Roboto+Condensed&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="container-fluid">
+		<header>
+			<video autoplay playsinline muted loop preload>
+				<source src="gears.mp4" />
+			</video>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 285 80" preserveAspectRatio="xMidYMid slice">
+				<defs>
+					<mask id="mask" x="0" y="0" width="100%" height="100%" >
+						<rect x="0" y="0" width="100%" height="100%" />
+						<text x="75"  y="50">CONTROL REDESIGN</text>
+					</mask>
+				</defs>
+				<rect x="0" y="0" width="100%" height="100%" />
+			</svg>
+		</header>
+		<blockquote>“Where is the temperature on this? What does Cooler or Warmer mean?” - Student, CMU.</blockquote>
+		
+		<p class="summary">Problem: How can we redesign a control such that it considers the user’s intent, context, behavior, environment, and physical limitations appropriately? How can we allow the user to apply knowledge of human perception and create controls that are elegant, intuitive and easily learned?</p>
+		<p class="summary">Solution: A control that provides the user with more perceptual affordance, feedforward, and feedback as well as a more interactive experience. </p>
+
+		<div>
+			<img class="img-fluid" src="images/Original Instance.png" alt="Original Instance">
+			<img class="img-fluid" src="images/Iteration 3.png" alt="Solution">
+		</div>
+		<div>
+			<img class="img-fluid" src="images/Info cardsRole.jpg" alt="info-cards">
+			<img class="img-fluid" src="images/Info cardsDuration.jpg" alt="info-cards">
+			<img class="img-fluid" src="images/Info cardsTeam Members.jpg" alt="info-cards">
+			<img class="img-fluid" src="images/Info cardsDesign Methods.jpg" alt="info-cards">
+		</div>
+		<nav>	
+			<ul id="navbar" class="portfolio-sorting list-inline text-center">
+				<li><a href="#section1"  class="btns active">Background Research</a></li>
+				<li><a href="#section2" class="btns">First Iteration</a></li>
+				<li><a href="#section3" class="btns">Second Iteration</a></li>
+				<li><a href="#section4" class="btns">Final Outcome</a></li>
+			</ul>
+		</nav>
+		<section id="section1">
+			<div class="header1">Background Research</div>
+			<div class="sub-content">
+				<img class="align-right slide-in margins-1 img-fluid" src="images/Original Instance.png">
+
+			  	<p>I was assigned to redesign the controls of a thermostat and we had to start off the project by picking an instance of a thermostat, one that did not create a good interaction for its users. The instance I chose was one I interacted with regularly in my room at the MHCI Lab.</p>
+
+				<p>The main pain point in the existing thermostat was the lack of feedback. It also lacked perceptual affordance, which allows users to understand what the control can do or achieve. Lastly, it lacked feedforward, so users couldn't perceive the consequences of their actions.</p>
+
+				<p>I generated two key insights: </p>
+
+				<div class="swiper-container">
+				  <div class="swiper-wrapper">
+				    <div class="container-general">
+						<div class="gallery-wrap wrap-effect-3">
+							<div class="item"></div>
+							<div class="item"></div>
+						</div>
+				    </div>
+				  </div>
+				</div>
+			</div>
+		</section>
+		
+		<section id="section2">
+			<div class="header1">First Iteration</div>
+			<div class="sub-content">
+				<img class="align-right slide-in margins-1 img-fluid" src="images/Possible first iteration.jpg">
+				<img class="align-right slide-in margins-1 img-fluid" src="images/Iteration 1.png">				
+				<p>For my first iteration, the potential improvements that I thought of were adding a display for the current temperature to provide feedback to the users, using a slider for temperature control to retain the original form of temperature control and allowing the user to set the maximum and minimum temperature to give them the ability to set the range in which the thermostat can be set within and provide more feedforward to the users. </p>
+
+				<p>I also added an additional feel feature as feedback to the user to feel the temperature that the user may want to set it to. The thermostat was a non-programmable one that is, it didn’t automatically sense the temperature and set it, but instead, the user had to do it themselves.</p>
+
+				<img class="align-right slide-in margins-1 img-fluid" src="images/iteration-1-critique.jpg">			
+				<p>Feedback: My first iteration did not succeed in meeting the user needs effectively as the design wasn’t intuitive enough and did not provide enough feedforward. The controls also lacked visual coupling and were sparsely placed. Also, the fact that it was a non-programmable thermostat didn’t connect well with the users during the critique session and they felt that programmable thermostats would be more helpful.</p>
+
+				<p>Some user comments that I got in the feedback and critique session:
+				“The feel-temperature outlet looks like a speaker on a phone.”
+				“I wouldn’t want to walk up to and set the temperature all the time.”</p>
+
+				<p>The insights I learned from this iteration were,</p>
+
+				<div class="swiper-container">
+				  <div class="swiper-wrapper">
+				    <div class="container-general">
+						<div class="gallery-wrap wrap-effect-3">
+							<div class="items"></div>
+							<div class="items"></div>
+						</div>
+				    </div>
+				  </div>
+				</div>
+			</div>
+		</section>
+		<section id="section3">
+			<div class="header1">Second Iteration</div>
+			<div class="sub-content">
+				<img class="align-right slide-in margins-1 img-fluid" src="images/Possible second iteration 1.jpg">
+				<img class="align-right slide-in margins-1 img-fluid" src="images/Possible second iteration 2.jpg">				
+				<p>To begin with my second iteration, I improved the feedforward and coupling of the device by making the controls map the controls visually with the information they display on the screen. I also chose to make it a programmable thermostat and make it a hands-free experience for the users. </p>
+
+				<p>I conducted A/B Testing to understand what alignment users preferred and what visual coupling provided the best feedforward. I conducted think-alouds with users to understand what problems they had in completing a certain task.</p>
+
+				<p>Some user comments that I got in the feedback and critique session:
+				“I like how you made an air vent for the temperature feel feature, it is very synonymous with ventilation.”
+				“I would set it on auto mode or however it does it because I don’t want to use the ‘Manual’ mode.”</p>
+
+				<img class="align-right slide-in margins-1 img-fluid" src="images/Second iteration final sketch.jpg">
+				<img class="align-right slide-in margins-1 img-fluid" src="images/Iteration 2.jpg">
+				<p>The following is my second iteration which included better visual feedback as it displays the current temperature, the time and the temperature that it will change to. It showed better coupling between the controls and the display as a change done using the controls is reflected on the display eg: MIN and MAX keys are place right below where the min-max values are displayed on the screen. And I improved on the uniformity in terms of the control buttons which had similar shapes or structures if they belonged to the same action.</p>
+
+				<p>Feedback: The critique that I got on my second iteration was to change the name ‘Sense’ to something more intuitive, as it did not convey the meaning clearly. I was also told to show the amount of time it takes to reach the set temperature. Overall, my second iteration was better received than the first one. </p>
+
+				<p>From my second iteration, I gained the following insights:</p>
+
+				<div class="swiper-container">
+				  <div class="swiper-wrapper">
+				    <div class="container-general">
+						<div class="gallery-wrap wrap-effect-3">
+							<div class="item-1"></div>
+							<div class="item-1"></div>
+						</div>
+				    </div>
+				  </div>
+				</div>
+			</div>
+		</section>
+		<section id="section4">
+			<div class="header1">Final Outcome</div>
+			<div class="sub-content">
+				<img class="align-right slide-in margins-1 img-fluid" src="images/Iteration 3.png">
+				<img class="align-right slide-in margins-1 img-fluid" src="images/Pitch 1.jpeg">
+				<img class="align-right slide-in margins-1 img-fluid" src="images/User interaction 1.jpg">
+				<p>The following is the final design that I created and had to ‘pitch’ to my classmates as a product that I had created for a thermostat company. My key takeaways from this project were that design is an iterative process and one that requires a constant feedback cycle to better inform the next iteration.</p>
+			</div>
+		</section>
+	</div>
+	<script src="../Assets/js/control-redesign.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js'></script>
+	<script id="rendered-js">
+		const swiper = new Swiper('.swiper-container', {
+			direction: 'vertical',
+			mousewheel: {},
+			effect: 'cube',
+			keyboard: {
+				enabled: true,
+				onlyInViewport: false 
+			} 
+		});
+    </script>
+</body>
+</html>
