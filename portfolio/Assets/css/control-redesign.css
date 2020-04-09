@@ -23,7 +23,6 @@ svg {
 svg text {
   font-family: 'Lato', sans-serif;
   font-weight: 1000;
-  font-size: 14px;
 }
 svg rect {
   fill: white;
@@ -31,38 +30,76 @@ svg rect {
 svg > rect {
   mask: url(#mask);
 }
-
+.first-line{
+	font-size: 20px;
+}
+.second-line{
+	font-size: 15px;
+}
 /*CSS for the Description summary*/
+
 .container-fluid { 
 	padding-top: 0px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Georgia', serif;
 }
-
 blockquote {
-  font-size: 30px;/*change to 20px for mobile version; change 22px for 768&992px sizes*/
-  color: #040d4f;
-	font-weight: 700;
-  text-align: center;
+	font-size: 27px;/*change to 20px for mobile version; change 22px for 768&992px sizes*/
+	color: #8B2635;
+	font-weight: 600;
+	text-align: center;
+	margin-bottom: 10%;
+	margin-top: 2%;
+	font-family: 'Montserrat';
 }
-
+strong {
+	font-weight: 800;
+}
+.row{
+	width: 100%;
+	margin: 0;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 .summary {
-	color: #091887;
+	color: #AD8350;
 	font-size: 20px; /*change to 15px for mobile version; change to 17px for 768&992 sizes*/
 	font-weight: 100;
-	margin-bottom: 10%;
-  text-align: center;
-  font-style: oblique;
+	margin-bottom: 5%;
+	text-align: center;
+	font-family: 'Georgia';
 }
-
+.right {
+	float: right;
+	width: 40%;
+}
+.left{
+	float: left;
+	width: 60%;
+	padding-right: 10%;
+}
+.product-size{
+	margin-left: 10%; /*Remove this for mobile version*/
+}
+.column {
+  float: left;
+  width: 25%;
+  padding: 2%;
+}
+.spacing{
+	margin-bottom: 20%;
+}
 /*CSS for Nav Bar*/
 .portfolio-sorting
 {
 	text-transform: uppercase;
-  font-family: 'Montserrat', 'sans-serif';
-  text-align: center;	
+	font-family: 'Montserrat', 'sans-serif';
+	text-align: center;	
 	font-size: 18px; /*15px for 768px & 992px; 13px for mobile*/
-  margin-bottom: 8%;
-  background-color: white;
+	margin-bottom: 8%;
+	background-color: white;
 }
 
 .portfolio-sorting li {
@@ -80,59 +117,93 @@ blockquote {
 .portfolio-sorting li a:hover,
 .portfolio-sorting li a.active
 {
-	color: #040d4f;
-	border-bottom: 2px solid #040d4f;
-  font-family: 'Montserrat', 'sans-serif';
+	color: #493B2A;
+	border-bottom: 2px solid #493B2A;
+	font-family: 'Montserrat', 'sans-serif';
 	font-weight: bold;
 }
 
 #navbar {
-  height: 75px;
-  left: 0px;
-  margin-left: 0px;
+	height: 75px;
+	left: 0px;
+	margin-left: 0px;
 }
 
 #navbar a {
-  -webkit-transition: .5s all ease-out;
-  -moz-transition: .5s all ease-out;
-  transition: .5s all ease-out;
+	-webkit-transition: .5s all ease-out;
+	-moz-transition: .5s all ease-out;
+	transition: .5s all ease-out;
 }
 
 .sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+	position: fixed;
+	top: 0;
+	width: 100%;
 }
 
 .sticky + .content {
-  padding-top: 60px;
+	padding-top: 60px;
 }
 
 /*CSS for Content*/
 .header1 {
 	/*text-align: left;*/
-  text-transform: uppercase;
-  font-family: 'Montserrat', 'sans-serif';
-  font-weight: bolder;
-  color: #1055b4;
-  padding-top: 150px; /*adjust for different screens*/
-  font-size: 18px; /*15px for 768px & 992px; 13px for mobile*/
+	text-transform: uppercase;
+	font-family: 'Montserrat', 'sans-serif';
+	font-weight: bolder;
+	color: #DB9D47;
+	padding-top: 20%; /*adjust for different screens*/
+	font-size: 25px; /*18px for 768px & 992px; 15px for mobile*/
 }
-
+.para-spacing {
+	margin-right: 5%;
+}
+.para-spacing-inmargin{
+	margin-top: 5%;
+}
 .sub-content {
-  margin-top: 5%;
-  margin-bottom: 0;
-  font-family: 'Montserrat', 'sans-serif';
-  color: #0d3265;
-  font-weight: 500;
-  font-size: 15px;
-  text-align: justify;
+	margin-top: 5%;
+	margin-bottom: 0;
+	font-family: 'Georgia', 'serif';
+	color: #493B2A;
+	font-weight: 500;
+	font-size: 20px;/*17px and 14px*/
+	text-align: justify;
 }
-
+.insight{
+	font-size: 22px;
+	margin-top: 10%;/*5% and 2%*/
+    font-weight: 700;
+}
 .last {
   margin-bottom: 30%;
 }
-
+.image-size{
+	max-height: 400px;/*350px*/
+}
+.image-size-height{
+	height: 550px;/*350px*/
+	width: 100%;
+	padding-left: 5%;
+}
+.image-width {
+	width: 60%;
+	padding-top: 2%;
+}
+.insight{
+	font-size: 22px;
+	margin-top: 10%;/*5% and 2%*/
+    font-weight: 700;
+}
+.insight-comment{
+	font-size: 22px;
+	margin-top: 5%;/*5% and 2%*/
+    font-weight: 700;
+}
+.column-3{
+	width: 33%;
+	float: left;
+}
 /*CSS for Image slide in*/
 .align-left {
   float: left;
@@ -162,13 +233,6 @@ blockquote {
   transform: translateX(0%) scale(1);
 }
 
-/*CSS for images*/
-.margins-1 {
-  margin-left: 3%;
-  margin-bottom: 3%;
-/*add image width to be responsive*/
-}
-
 /*CSS for carousel*/
 .container-general {
 /*	padding: 75px 0;*/
@@ -183,7 +247,7 @@ blockquote {
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 50vh;/*change it to 30vh for mobile version*/
+  height: 30vh;/*change it to 10vh for mobile version*/
 }
 .container-general .gallery-wrap .item {
   flex: 1;
@@ -269,13 +333,68 @@ blockquote {
   }
 }
 
-/*CSS for project info card*/
-/*.project-info-card{*/
-  /*width: 70%;80% for 768 & 992px; 90% for mobile version*/
-  /*margin-right: auto;
-  margin-left: auto;
-  display: block;
-  margin-bottom: 15%; /*change to 10% for others*/
-/*}*/
+/*CSS for footer*/
+footer {
+  background-color: #FAFCFF;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 20%;
+}
+.projects-footer{
+  margin-bottom: 5%;
+  margin-right: 10%;
+  margin-left: 10%;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+a.project-footer{
+  color: #AD8350;
+  text-decoration: none;
+  font-size: 25px;
+}
+.project-footer{
+  padding-right: 2%;
+  padding-left: 2%;
 
-
+}
+a.active{
+	color: #8B2635;
+}
+a.project-footer:hover{
+  color: #8B2635;
+}
+.contact-info{
+  margin-bottom: 5%;
+}
+.contact-footer{
+  padding-right: 2%;
+  padding-left: 2%;
+}
+a.contact-footer{
+  color: #c4c4c4;
+  text-decoration: none;
+}
+.copyright{
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+a.link{
+  color: #007bff;
+  text-decoration: none;
+}
+a.linkedin:hover{
+  color: #0e76a8;
+  font-weight: bold;
+}
+a.facebook:hover{
+  color: #3b5998;
+  font-weight: bold;
+}
+a.behance:hover{
+  color: #053eff;
+  font-weight: bold;
+}
+a.medium:hover{
+  color: #00ab6c;
+  font-weight: bold;
+}

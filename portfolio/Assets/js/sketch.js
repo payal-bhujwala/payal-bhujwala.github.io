@@ -281,7 +281,7 @@
       suffix = isDiv ? 'px' : '';
 
       w = context.width;
-      h = context.width;
+      h = context.height;
 
       if ( context.fullscreen ) {
 
