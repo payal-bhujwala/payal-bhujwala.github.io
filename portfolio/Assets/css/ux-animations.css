@@ -236,35 +236,70 @@ blockquote {
   }
 }
 
-/*CSS for project info card*/
-.project-info-card{
-  width: 70%;/*80% for 768 & 992px; 90% for mobile version*/
-  margin-right: auto;
-  margin-left: auto;
-  display: block;
-  margin-bottom: 15%; /*change to 10% for others*/
-}
-
-/*CSS for team names*/
-.team {
-  margin-top: 0;
-  margin-bottom: 1rem;
+/*CSS for footer*/
+footer {
+  background-color: #FAFCFF;
+  padding: 20px 0;
   text-align: center;
-  font-size: 17px;
-  font-family: 'montserrat';
-  color: #c4c4c4;
+  margin-top: 30%;
+  font-family: 'Montserrat';
 }
-.team a{
+.projects-footer{
+  margin-bottom: 5%;
+  margin-right: 10%;
+  margin-left: 10%;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+a.project-footer{
+  color: #C2EFB3;
   text-decoration: none;
+  font-size: 25px;
+}
+.project-footer{
+  padding-right: 2%;
+  padding-left: 2%;
+
+}
+a.active{
+  color: #1EA500;
+}
+a.project-footer:hover{
+  color: #1EA500;
+}
+.contact-info{
+  margin-bottom: 5%;
+}
+.contact-footer{
+  padding-right: 2%;
+  padding-left: 2%;
+}
+a.contact-footer{
   color: #c4c4c4;
+  text-decoration: none;
+}
+.copyright{
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+a.link{
+  color: #007bff;
+  text-decoration: none;
+}
+a.linkedin:hover{
+  color: #0e76a8;
+  font-weight: bold;
+}
+a.facebook:hover{
+  color: #3b5998;
+  font-weight: bold;
+}
+a.behance:hover{
+  color: #053eff;
+  font-weight: bold;
+}
+a.medium:hover{
+  color: #00ab6c;
+  font-weight: bold;
 }
 
-/*CSS for back-arrow*/
-.back-arrow {
-  float: left;
-  width: 100px;
-  margin-top: 5%;
-}
-.back-arrow a {
-  text-decoration: none;
-}
