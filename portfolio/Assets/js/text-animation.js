@@ -1356,16 +1356,16 @@ function typewriter(){
 };
 
 //JS for page transition 
-$(document).ready(function() {
-  $("a").click(function (e) {
-    e.preventDefault();
-    $(".flex-class-1").fadeOut("slow");
-    $(".flex-class-2").fadeOut("slow");
-    setTimeout(function(){
-      window.location.href = "landing_page.html";
-    }, 500);
-  });
-});
+// $(document).ready(function() {
+//   $("a").click(function (e) {
+//     e.preventDefault();
+//     $(".flex-class-1").fadeOut("slow");
+//     $(".flex-class-2").fadeOut("slow");
+//     setTimeout(function(){
+//       window.location.href = "landing_page.html";
+//     }, 500);
+//   });
+// });
 
 //JS for fireworks animation 
 window.human = true;

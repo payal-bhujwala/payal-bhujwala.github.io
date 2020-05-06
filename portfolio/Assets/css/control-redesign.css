@@ -1,6 +1,10 @@
 @charset "UTF-8";
 /* CSS Document */
 
+.image-size {
+  max-width: 250px;
+  margin-left: 20%;
+}
 /*CSS for the Header Video*/
 body {
   background: white;
@@ -180,6 +184,8 @@ strong {
 }
 .image-size{
 	max-height: 400px;/*350px*/
+  margin-top: -20px;
+
 }
 .image-size-height{
 	height: 550px;/*350px*/
