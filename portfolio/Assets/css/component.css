@@ -1,8 +1,4 @@
-@media (min-width: 576px){
-	.grid li{
-		width: 50%;
-	}
-}
+
 .grid {
 	list-style: none;
 	margin: 30px auto;
@@ -81,6 +77,21 @@
 @keyframes scaleUp {
 	0% { }
 	100% { -webkit-transform: scale(1); transform: scale(1); opacity: 1; }
+}
+
+@media (max-width: 420px){
+	.grid li{
+		width: 100%;
+	}
+	.content-details p {
+		font-size: 0.7rem;
+	}
+}
+
+@media (max-width: 768px) and (min-width: 576px){
+	.grid li{
+		width: 50%;
+	}
 }
 
 /* Effect 4: fall perspective */

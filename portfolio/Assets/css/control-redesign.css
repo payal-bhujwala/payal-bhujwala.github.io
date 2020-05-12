@@ -1,10 +1,16 @@
 @charset "UTF-8";
-/* CSS Document */
 
-.image-size {
-  max-width: 250px;
-  margin-left: 20%;
+/* CSS Navbar */
+
+#nav-link-color{
+  color: #5B1E09;
 }
+
+#nav-link-color:hover{
+  color:#000;
+  font-weight: 700;
+}
+
 /*CSS for the Header Video*/
 body {
   background: white;
@@ -182,11 +188,13 @@ strong {
 .last {
   margin-bottom: 30%;
 }
+
 .image-size{
 	max-height: 400px;/*350px*/
   margin-top: -20px;
 
 }
+
 .image-size-height{
 	height: 550px;/*350px*/
 	width: 100%;
@@ -249,6 +257,7 @@ strong {
 	padding-left: 5%;
     padding-right: 5%;
 }
+
 .container-general .gallery-wrap {
   display: flex;
   flex-direction: row;
@@ -351,6 +360,7 @@ footer {
   margin-right: 10%;
   margin-left: 10%;
   font-weight: 900;
+  font-family: 'Montserrat', 'sans-serif';
   text-transform: uppercase;
 }
 a.project-footer{
@@ -369,6 +379,7 @@ a.active{
 a.project-footer:hover{
   color: #8B2635;
 }
+/*
 .contact-info{
   margin-bottom: 5%;
 }
@@ -403,4 +414,48 @@ a.behance:hover{
 a.medium:hover{
   color: #00ab6c;
   font-weight: bold;
+}
+*/
+@media (max-width: 420px) {
+	.image-size {
+		max-width: 50px;
+	}
+	blockquote {
+		font-size: 15px;
+		font-weight: 700;
+		margin-bottom: 5%;
+	}
+	.summary {
+		font-size: 15px;
+	}
+	.left{
+	  padding-right: 5%;
+	}
+	.portfolio-sorting {
+		font-size: 8px;
+		margin-bottom: 3%;
+	}
+	.header1 {
+		font-size: 15px;
+	}
+	.sub-content {
+		font-size: 12px;
+	}
+	.insight{
+	  font-size: 15px;
+	  margin-top: 2%;/*5% and 2%*/
+	  font-weight: 700;
+	}
+	.container-general .gallery-wrap {
+	  height: 12vh;/*change it to 12vh for mobile version*/
+	}
+	a.project-footer{
+		font-size: 12px;
+	}
+	.image-size{
+		max-height: 350px;
+	}
+	.image-size-height{
+		height: 350px;
+	}
 }

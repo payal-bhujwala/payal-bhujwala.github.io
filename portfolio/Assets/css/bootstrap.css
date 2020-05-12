@@ -371,12 +371,14 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
 }
 
+/*
 h4, .h4 {
   font-size: 1.5rem;
 }
+*/
 
 h5, .h5 {
   font-size: 1.25rem;
@@ -604,14 +606,19 @@ pre code {
   margin-left: auto;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 420px) {
   .container, .container-sm {
     max-width: 540px;
   }
   .container-fluid {
     padding-right: 50px;
     padding-left: 50px;
+	padding-top: 50px;
   }
+	h3 {
+		font-size: 1rem;
+	}
+	
 }
 
 /*
@@ -631,8 +638,8 @@ pre code {
     max-width: 720px;
   }
   .container-fluid {
-    padding-right: 100px;
-    padding-left: 100px;
+    padding-right: 80px;
+    padding-left: 80px;
   }
 }
 

@@ -1,27 +1,21 @@
 @charset "UTF-8";
 
-@media (min-width: 576px){
-	.container {
-	  max-width: 540px; 
-	}
-	.grid li{
-		width: 50%;
+@media (max-width:375px) {
+	body{
+		max-width: 375px;
 	}
 }
-@media (min-width: 768px) {
-	.container {
-	  max-width: 720px; 
-	} 
+
+@media (max-width:420px) {
+	body{
+		max-width: 420px;
+	}
 }
-@media (min-width: 992px) {
-	.container {
-	  max-width: 960px; 
-	} 
-}
-@media (min-width: 1200px) {
-	.container {
-	  max-width: 1140px; 
-	} 
+
+@media (max-width: 768px) and (min-width:576px) {
+	.content-details p {
+		font-size: 0.8rem;
+	}
 }
 
 /*CSS for title logo*/
@@ -30,12 +24,10 @@
 	height: 125px;
 }
 
-/*@media screen and (max-width: 640px) {
-  .container {
-    display: block;
-    width: 100%;
-  }
-}*/
+.image-size {
+  max-width: 150px;
+  margin-left: 20%;
+}
 
 /*Start of Hover CSS*/
 
@@ -102,16 +94,16 @@
 
 .content-details h3 {
   color: #fff;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 0.15em;
   margin-bottom: 0.5em;
   text-transform: uppercase;
-  font-family: 'Lato', Calibri, Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .content-details p {
   color: #fff;
-  font-size: 0.8em;
+  font-size: 1.2rem;
   font-family: 'Lato', Calibri, Arial, sans-serif;
 }
 
@@ -134,6 +126,11 @@
 /*End of Hover CSS*/
 
 /*Start of Footer CSS*/
+@media (max-width:420px) {
+	footer{
+		font-size: 11px;
+	}
+}
 
 footer {
   background-color: #FAFCFF;
@@ -141,6 +138,7 @@ footer {
   text-align: center;
   margin-top: 15%;
 }
+/*
 .projects-footer{
   margin-bottom: 5%;
   margin-right: 10%;
@@ -163,6 +161,7 @@ a.project-footer:hover{
   color: #007bff;
   text-decoration: none;
 }
+*/
 .contact-info{
   margin-bottom: 5%;
 }
@@ -209,16 +208,9 @@ a.medium:hover{
 	margin-bottom: 250px;
 }
 
-@media (max-width: 576px){
-	.container {
-	  min-width: 540px; 
-	}
-	.logo {
-		height: 100px;
-	}
-}
 
 /*CSS for the typewriter text*/
+
 h4 {
   text-align: center;
   color: #2980b9;
@@ -231,6 +223,7 @@ h4 {
 
 .flex-class-2 {
   display: block;
+  padding-bottom: 2%;
 }
 
 /* CSS for navbar*/
@@ -238,32 +231,7 @@ h4 {
   color: #FFFFFF;
   background-color: #B07BAC;
   border-radius: 0.3rem;
+  text-align: center;
 }
 
-/*CSS for About Me*/
-.about-me{
-  padding-top: 5%;
-  padding-left: 20%;
-}
 
-.header{
-  font-size: 50px; /*30px for mobile version*/
-  color: #2980b9;
-  font-family: 'Montserrat';
-  font-weight: 700;
-  padding-top: 20%;
-}
-
-.description{
-  font-size: 20px;
-  font-family: 'Montserrat', sans-serif;
-  color: #69B3E3;
-}
-
-.tile-header{
-  font-weight: 900;
-  padding-bottom: 1%;
-  padding-top: 2%;
-  color: #2980b9;
-  font-size: 22px;
-}

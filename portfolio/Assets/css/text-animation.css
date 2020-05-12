@@ -1,3 +1,5 @@
+/*CSS for mobile*/
+
 body {
   height: 100vh;
   width: 100%;
@@ -23,39 +25,6 @@ body {
   margin-right: 10%;
 }
 
-h3 {
-  width: 70%;
-  margin-left: 15%;
-  margin-right: 15%;
-  svg {
-    /*width: 20em;*/
-  }
-}
-
-.arrow {
-  width: 150px;
-  height: 150px;
-  margin-bottom: 50px;
-  align-items: center;
-  cursor: pointer;
-}
-
-.arrow-animation {
-  animation: 0.5s bounce ease infinite;
-}
-
-@keyframes bounce {
-  0% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(3px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
 h4 {
   text-align: center;
   color: #2980b9;
@@ -67,3 +36,9 @@ h4 {
 }
 
 * { color:#2980b9; text-decoration: none;}
+
+@media (max-width:420px) {
+	h4 {
+		font-size: 15px;
+	}
+}
