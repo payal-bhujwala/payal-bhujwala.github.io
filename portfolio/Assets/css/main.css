@@ -26,7 +26,8 @@
 
 .image-size {
   max-width: 150px;
-  margin-left: 20%;
+  margin-left: 25%;
+  margin-top: 10%;
 }
 
 /*Start of Hover CSS*/
@@ -124,6 +125,12 @@
 }
 
 /*End of Hover CSS*/
+
+.insight{
+  font-size: 22px;
+  margin-top: 10%;/*5% and 2%*/
+  font-weight: 700;
+}
 
 /*Start of Footer CSS*/
 @media (max-width:420px) {

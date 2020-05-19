@@ -412,43 +412,7 @@ a.active{
 a.project-footer:hover{
   color: #1EA500;
 }
-/*
-.contact-info{
-  margin-bottom: 5%;
-}
-.contact-footer{
-  padding-right: 2%;
-  padding-left: 2%;
-}
-a.contact-footer{
-  color: #c4c4c4;
-  text-decoration: none;
-}
-.copyright{
-  margin-bottom: 0px;
-  margin-top: 0px;
-}
-a.link{
-  color: #007bff;
-  text-decoration: none;
-}
-a.linkedin:hover{
-  color: #0e76a8;
-  font-weight: bold;
-}
-a.facebook:hover{
-  color: #3b5998;
-  font-weight: bold;
-}
-a.behance:hover{
-  color: #053eff;
-  font-weight: bold;
-}
-a.medium:hover{
-  color: #00ab6c;
-  font-weight: bold;
-}
-*/
+
 @media (max-width: 420px) {
 	.image-size {
 		max-width: 50px;
