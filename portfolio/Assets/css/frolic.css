@@ -41,7 +41,13 @@ svg rect {
 svg > rect {
   mask: url(#mask);
 }
-
+.column {
+  float: left;
+  width: 20%;
+}
+.spacing-nav{
+  margin-bottom: 50%;
+}
 /*CSS for the Description summary*/
 .container-fluid { 
   padding-top: 0px;

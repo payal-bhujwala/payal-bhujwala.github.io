@@ -5,28 +5,254 @@
 	<title>MHCI Capstone Project</title>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<link href="../Assets/css/bootstrap.css" rel="stylesheet" type="text/css">
-	<link href="../Assets/css/trashtalk.css" rel="stylesheet" type="text/css">
+	<link href="../Assets/css/capstone-project.css" rel="stylesheet" type="text/css">
+	<link href="../Assets/css/main.css" rel="stylesheet" type="text/css">
+	<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+	<link rel="manifest" href="../site.webmanifest">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Lato|Open+Sans|Oswald|PT+Sans:400,700|Raleway|Roboto|Roboto+Condensed&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 </head>
 <body>
+	<nav class="navbar navbar-expand-lg navbar-light">
+		<a class="navbar-brand" href="../index.html"><img class ="image-size" src="../Assets/images/brand-logo-navbar-cr.jpg"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto" style="margin-left: 75%;margin-top: 20px;">
+			  <li class="nav-item">
+			    <a id="nav-link-color" class="nav-link" href="../index.html">Home</a>
+			  </li>
+			  <li class="nav-item">
+			    <a id="nav-link-color" class="nav-link" href="../about.html">About Me</a><!--<span class="sr-only">(current)</span>-->
+			  </li>
+			  <li class="nav-item">
+			  	<a id="nav-link-color" class="nav-link" href="../Resume_PayalBhujwala.pdf" download>Resume</a>
+			  </li>
+			</ul>
+		</div>
+	</nav>
 	<div class="container-fluid">
 		<header>
 			<video autoplay playsinline muted loop preload poster="images/trashtalk-bg.png">
-				<source src="trashtalk-bgmovie.mp4" />
+				<source src="pgh.mp4" />
 			</video>
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 285 80" preserveAspectRatio="xMidYMid slice">
 				<defs>
 					<mask id="mask" x="0" y="0" width="100%" height="100%" >
 						<rect x="0" y="0" width="100%" height="100%" />
-						<text x="75"  y="50">Envisioning the future of</text>
-						<text x="75"  y="50">RESPONSIBLE PHILANTHROPY</text>
+						<text class="first-line" x="75"  y="30">Designing the future of</text>
+						<text class="second-line" x="72"  y="40">RESPONSIBLE PHILANTHROPY</text>
 					</mask>
 				</defs>
 				<rect x="0" y="0" width="100%" height="100%" />
 			</svg>
 		</header>
-		<blockquote>This project page is a work in progress, getting it ready soon!</blockquote>
+		<blockquote>A project on how we can leverage technology to encourage donors to donate more responsibly and strengthen the personal connection between the donors and The Pittsburgh Foundation further. </blockquote>
+
+		<div class="row">
+			<p class="summary left"><strong>Problem:</strong> How might we use technology to match donors to declined grantee requests, better utilize all the data generated and automate routine tasks to assist users in matching donor interests with grantee requests and community needs? </p>
+			<p class="summary right"><strong>Reframed Problem:</strong> <em>How we might equip The Pittsburgh Foundation with an internal tool to help them make the experience for donors as personalized and successful as possible by smoothing the behind-the-scenes actions? </em></p>
+		</div>
+
+		<div class="row spacing">
+			<div class="column">
+				<img class="img-fluid" src="images/Info cardsTeam Members.jpg" alt="info-cards">
+			</div>
+			<div class="column">
+				<img class="img-fluid" src="images/Info cardsRole.jpg" alt="info-cards">
+			</div>
+			<div class="column">
+				<img class="img-fluid" src="images/Info cardsDuration.jpg" alt="info-cards">
+			</div>
+			<div class="column">
+				<img class="img-fluid" src="images/Info cardsAdvisors.jpg" alt="info-cards">
+			</div>
+			<div class="column">
+				<img class="img-fluid" src="images/Info cardsClient.jpg" alt="info-cards">
+			</div>
+		</div>
+
+		<nav>	
+			<ul id="navbar" class="portfolio-sorting list-inline text-center">
+				<li><a href="#section1"  class="btns active">Kickoff</a></li>
+				<li><a href="#section2" class="btns">Primary Research</a></li>
+				<li><a href="#section3" class="btns">Secondary Research</a></li>
+				<li><a href="#section4" class="btns">Narrowing our Scope</a></li>
+				<li><a href="#section5" class="btns">Storyboarding and Speed dating</a></li>
+				<li><a href="#section6" class="btns">Reframed Problem</a></li>
+				<li><a href="#section7" class="btns">Next Steps</a></li>
+			</ul>
+		</nav>
+
+		<section id="section1">
+			<div class="header1">Kickoff</div>
+			<div class="sub-content">
+				<!-- <img class="align-right slide-in margins-1 img-fluid image-size-cr" src="images/Original Instance.png"> -->
+
+			  	<p>To officially kickstart our project we had our kickoff meeting at The Pittsburgh Foundation (henceforth referred to as TPF) office in downtown Pittsburgh. One of the things that we talked about was how does TPF define ‘responsible philanthropy’ and what motivates donors to give to a cause or a community need. Towards the end of our meeting we did a collaborative activity with our clients of creating a journey map of a donor from meeting with their financial advisor to the forever cycle of the foundation continuing the donor’s legacy through the donor’s fund. This exercise helped us particularly as it validated and solidified our understanding of what the client was saying with a visual. </p>
+
+			  	<p>From our kickoff meeting we started with the first phase of the double diamond of the design process(click on this link to know more) where we explore what the problem is and go as broad as possible from the problem statement.</p>
+
+				<p class="insight">Some of the key insights we generated from this meeting were:</p>
+
+				<!-- <div class="swiper-container">
+				  <div class="swiper-wrapper">
+				    <div class="container-general">
+						<div class="gallery-wrap wrap-effect-3">
+							<div class="item"></div>
+							<div class="item"></div>
+						</div>
+				    </div>
+				  </div>
+				</div> -->
+			</div>
+		</section>
+
+		<section id="section2">
+			<div class="header1">Primary Research</div>
+			<div class="sub-content">
+				<!-- <img class="align-right slide-in margins-1 img-fluid image-size-cr" src="images/Original Instance.png"> -->
+
+				<p class="insight">For our primary research we used the following research methods:</p>
+
+			  	<p>Our semi structured interviews helped us gain insights into the personal connection between the TPF employees and their donors and the work that they have been doing behind the scenes to facilitate a better matchmaking process between donors and grantees. Talking to donors helped us understand their motivations to give back to the community and the domain experts provided us more context into the psyche of giving. From talking to non profits and grantees we also uncovered some of their unmet needs mainly one of having more transparency into the working of TPF and how they determined which non profit was given funding. Community foundations are known to unique and complex ecosystems however, talking to other community foundations we realized that their core values and internal working have many similarities one of the main ones being that they want the people of the community to give back to the same community that they live in. </p>
+
+			  	<p>Since none of us are local pittsburghers, we decided to conduct guerrilla research and approach locals to understand what connects them to the city and what community issues they thought were significant. We also used this opportunity to test out our pretotype which was a survey of nonprofits and get an understanding of what residents thought were the current pressing needs of the community. Some of the key issues that emerged from this survey matched with what the donors had to say that they wish to donate to more. </p>
+
+				<p class="insight">Some of the key insights we generated from this research were: </p>
+
+				<div class="swiper-container">
+				  <div class="swiper-wrapper">
+				    <div class="container-general">
+						<div class="gallery-wrap wrap-effect-3">
+							<div class="item"></div>
+							<div class="item"></div>
+						</div>
+				    </div>
+				  </div>
+				</div>
+			</div>
+		</section>
+
+		<section id="section3">
+			<div class="header1">Secondary Research</div>
+			<div class="sub-content">
+				<!-- <img class="align-right slide-in margins-1 img-fluid image-size-cr" src="images/Original Instance.png"> -->
+
+				<p class="insight">For our secondary research we read and analysed the following resources:</p>
+
+
+			  	<p>To gain a deeper understanding of philanthropy and the psyche of donors we read the book Science of Giving by Daniel Oppenheimer and Christopher Olivola. This book also helped us understand the underlying psychological and social concepts that impact and drive philanthropic behaviors. Many points covered in this book were validated throughout our research process and this book served as an important point of reference when it came to talking to donors about their needs.</p>
+
+			  	<p>For analogous domains we explored different online donation platforms and found how some of the points brought up in the book were put into action on these platforms. Platforms such as Kickstarter and Gofundme give donors more insight into how their donations are making an impact and facebook donations leverage the altruistic feeling that donors have when they are making a donation. </p>
+
+				<p class="insight">Some of the key insights we generated from this research were: </p>
+
+				<div class="swiper-container">
+				  <div class="swiper-wrapper">
+				    <div class="container-general">
+						<div class="gallery-wrap wrap-effect-3">
+							<div class="item"></div>
+							<div class="item"></div>
+						</div>
+				    </div>
+				  </div>
+				</div>
+			</div>
+		</section>
+
+		<section id="section4">
+			<div class="header1">Narrowing our Scope</div>
+			<div class="sub-content">
+				<!-- <img class="align-right slide-in margins-1 img-fluid image-size-cr" src="images/Original Instance.png"> -->
+
+			  	<p>Based on all the interviews we had conducted in our first phase we were now in the second phase of our double diamond where we began narrowing down the scope of our initial problem. We began by synthesising our research into an affinity diagram. An affinity diagram is extremely useful in mapping out findings and generating insights in a structured manner. We followed a hierarchical approach as shown below and did the first three levels of clustering as a team and then did the last level of clustering with our clients as a collaborative exercise. This exercise was helpful as our clients also helped us fill in making connections that we had missed and cluster notes that did not previously belong to any cluster. We then did a Rose, Bud, Thorn activity to identify the things that were currently working well, opportunities for improvement and pain points in the existing structure. </p>
+
+			  	<p>Based on our affinity diagramming we did a reverse assumptions activity to help reframe our existing problem statement and allow us to generate a final direction for our solution.</p>
+
+				<p class="insight">Some of the important user needs and opportunities that helped shape our final direction from this are:</p>
+
+				<p><strong>User Needs:</strong>
+					<ol>
+						<li>Donors need a place to come together and discuss their philanthropy.</li>
+						<li>Donors need a way to talk about money without the stigma.</li>
+						<li>TPF needs to better utilize data and strengthen their relation with the donors.</li>
+						<li>TPF needs to appeal to the next generation of donors.</li>
+					</ol>
+				</p>
+
+				<p><strong>Opportunities:</strong>
+					<ol>
+						<li>An opportunity for donors to talk to other donors about money and philanthropy as they see a stigma in talking with their friends and family.</li>
+						<li>Matching donors with each other to be able to collaborate and donate more responsibly. </li>
+						<li>Collect nuanced data on donor interests to be able to get a better idea of the causes and grants donors would be interested in donating to. </li>
+						<li>Strengthen trust through more personalized services as donors see TPF as a go-to resource when it comes to anything related to donating.</li>
+					</ol>
+				</p>
+
+				<!-- <div class="swiper-container">
+				  <div class="swiper-wrapper">
+				    <div class="container-general">
+						<div class="gallery-wrap wrap-effect-3">
+							<div class="item"></div>
+							<div class="item"></div>
+						</div>
+				    </div>
+				  </div>
+				</div> -->
+			</div>
+		</section>
+
+		<section id="section5">
+			<div class="header1">Storyboarding and Speed dating</div>
+			<div class="sub-content">
+				<!-- <img class="align-right slide-in margins-1 img-fluid image-size-cr" src="images/Original Instance.png"> -->
+
+			  	<p>To validate the user needs that emerged from our synthesis we generated storyboards that addressed these needs. And tested them with TPF donors using speed dating, a design research method used to rapidly test ideas for solutions and reflect on them before generating their prototypes.</p>
+
+				<p class="insight">Some of the needs we validated from speed dating sessions were: </p>
+
+				<!-- <div class="swiper-container">
+				  <div class="swiper-wrapper">
+				    <div class="container-general">
+						<div class="gallery-wrap wrap-effect-3">
+							<div class="item"></div>
+							<div class="item"></div>
+						</div>
+				    </div>
+				  </div>
+				</div> -->
+			</div>
+		</section>
+
+		<section id="section6">
+			<div class="header1">Reframed Problem</div>
+			<div class="sub-content">
+				<!-- <img class="align-right slide-in margins-1 img-fluid image-size-cr" src="images/Original Instance.png"> -->
+
+			  	<p>Based on all the research we did so far, we reframed the initial problem statement as <strong>how we might equip The Pittsburgh Foundation with an internal tool to help them make the experience for donors as personalized and successful as possible by smoothing the behind-the-scenes actions</strong>. Our mission with this direction is to cultivate nuanced donor data, match donors to community needs, and strengthen donors’ trust through personalized services. </p>
+
+			</div>
+		</section>
+
+		<section id="section7">
+			<div class="header1">Next Steps</div>
+			<div class="sub-content">
+				<!-- <img class="align-right slide-in margins-1 img-fluid image-size-cr" src="images/Original Instance.png"> -->
+
+			  	<p>As part of our final deliverables we also had to put together a research and reframing report which consisted of all our findings and insights that supported our redefined problem scope. Along with the reframing report we also created a responsive website to highlight our research and findings. I was responsible for the layout of the website and designing the interactions for the same. And with that our spring semester came to an end with a final presentation to our clients, faculty and other students about how we narrowed our scope and what the reframed problem is. </p>
+
+				<p>We are looking forward to working in the summer on developing our reframed problem further by first generating multiple solutions in the first half of the summer and then testing and iterating on these solutions to narrow down on one final design to hand it off to our clients. Come back to this page later in the summer to see our final design! </p>
+			</div>
+		</section>
+
 	</div>
 	<footer>
 		<div class="projects-footer">

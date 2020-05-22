@@ -1,18 +1,32 @@
 @charset "UTF-8";
 /* CSS Document */
 
+/* CSS Navbar */
+
+#nav-link-color{
+  color: #5B1E09;
+}
+
+#nav-link-color:hover{
+  color:#000;
+  font-weight: 700;
+}
+
 /*CSS for the Header Video*/
 body {
   background: white;
-  margin: 2rem;
+  /*margin: 2rem;*/
 }
 header { 
   width: 100%;
   margin: 0 auto;
   position: relative;
-  max-width: 1200px;
+  /*max-width: 1200px;*/
 }
-header video { width: 100%; }
+header video { 
+  width: 100%;
+  /*max-height: 800px; */
+}
 svg { 
   width: 100%;
   position:absolute;
@@ -23,13 +37,19 @@ svg {
 svg text {
   font-family: 'Lato', sans-serif;
   font-weight: 1000;
-  font-size: 30px;
+  /*font-size: 30px;*/
 }
 svg rect {
   fill: white;
 }
 svg > rect {
   mask: url(#mask);
+}
+.first-line{
+  font-size: 13px;
+}
+.second-line{
+  font-size: 9.5px;
 }
 
 /*CSS for the Description summary*/
@@ -39,12 +59,51 @@ svg > rect {
 }
 
 blockquote {
-  font-size: 30px;/*change to 20px for mobile version; change 22px for 768&992px sizes*/
-  color: #040d4f;
-	font-weight: 700;
+  font-size: 27px;/*change to 20px for mobile version; change 22px for 768&992px sizes*/
+  color: #ECA400;
+  font-weight: 600;
   text-align: center;
+  margin-bottom: 10%;
+  font-family: 'Montserrat';
+}
+strong {
+  font-weight: 800;
+}
+.row{
+  width: 100%;
+  margin: 0;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.summary {
+  color: #272932;
+  font-size: 20px; /*change to 15px for mobile version; change to 17px for 768&992 sizes*/
+  font-weight: 100;
+  margin-bottom: 10%;
+  text-align: center;
+  font-family: 'Georgia';
+}
+.right {
+  float: right;
+  width: 40%;
+}
+.left{
+  float: left;
+  width: 60%;
+  padding-right: 10%;
 }
 
+.column {
+  float: left;
+  width: 20%;
+  padding: 2%;
+}
+.spacing{
+  margin-bottom: 20%;
+}
 /*CSS for Nav Bar*/
 .portfolio-sorting
 {
@@ -71,8 +130,8 @@ blockquote {
 .portfolio-sorting li a:hover,
 .portfolio-sorting li a.active
 {
-	color: #040d4f;
-	border-bottom: 2px solid #040d4f;
+	color: #ECA400;
+	border-bottom: 2px solid #ECA400;
   font-family: 'Montserrat', 'sans-serif';
 	font-weight: bold;
 }
@@ -105,23 +164,29 @@ blockquote {
   text-transform: uppercase;
   font-family: 'Montserrat', 'sans-serif';
   font-weight: bolder;
-  color: #1055b4;
-  font-size: 18px; /*15px for 768px & 992px; 13px for mobile*/
+  color: #379BD7;
+  padding-top: 20%; /*adjust for different screens*/
+  font-size: 25px; /*18px for 768px & 992px; 15px for mobile*/
 }
 
 .sub-content {
   margin-top: 5%;
   margin-bottom: 0;
-  font-family: 'Montserrat', 'sans-serif';
-  color: #0d3265;
+  font-family: 'Georgia', 'serif';
+  color: #272932;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 20px;/*17px and 14px*/
   text-align: justify;
 }
-
+.insight{
+  font-size: 22px;
+  margin-top: 10%;/*5% and 2%*/
+    font-weight: 700;
+}
 .last {
   margin-bottom: 30%;
 }
+
 
 /*CSS for Image slide in*/
 .align-left {
@@ -243,7 +308,7 @@ footer {
   text-transform: uppercase;
 }
 a.project-footer{
-  color: #C2EFB3;
+  color: #C5D5EA;
   text-decoration: none;
   font-size: 25px;
 }
@@ -253,44 +318,8 @@ a.project-footer{
 
 }
 a.active{
-  color: #1EA500;
+  color: #306BAC;
 }
 a.project-footer:hover{
-  color: #1EA500;
+  color: #306BAC;
 }
-.contact-info{
-  margin-bottom: 5%;
-}
-.contact-footer{
-  padding-right: 2%;
-  padding-left: 2%;
-}
-a.contact-footer{
-  color: #c4c4c4;
-  text-decoration: none;
-}
-.copyright{
-  margin-bottom: 0px;
-  margin-top: 0px;
-}
-a.link{
-  color: #007bff;
-  text-decoration: none;
-}
-a.linkedin:hover{
-  color: #0e76a8;
-  font-weight: bold;
-}
-a.facebook:hover{
-  color: #3b5998;
-  font-weight: bold;
-}
-a.behance:hover{
-  color: #053eff;
-  font-weight: bold;
-}
-a.medium:hover{
-  color: #00ab6c;
-  font-weight: bold;
-}
-

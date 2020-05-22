@@ -5,27 +5,164 @@
 	<title>IoT of Public Health Monitors</title>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<link href="../Assets/css/bootstrap.css" rel="stylesheet" type="text/css">
-	<link href="../Assets/css/trashtalk.css" rel="stylesheet" type="text/css">
+	<link href="../Assets/css/iot-public-health.css" rel="stylesheet" type="text/css">
+	<link href="../Assets/css/main.css" rel="stylesheet" type="text/css">
+	<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+	<link rel="manifest" href="../site.webmanifest">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Lato|Open+Sans|Oswald|PT+Sans:400,700|Raleway|Roboto|Roboto+Condensed&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 </head>
 <body>
+	<nav class="navbar navbar-expand-lg navbar-light">
+		<a class="navbar-brand" href="../index.html"><img class ="image-size" src="../Assets/images/brand-logo-navbar-iot.jpg"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto" style="margin-left: 75%;margin-top: 20px;">
+			  <li class="nav-item">
+			    <a id="nav-link-color" class="nav-link" href="../index.html">Home</a>
+			  </li>
+			  <li class="nav-item">
+			    <a id="nav-link-color" class="nav-link" href="../about.html">About Me</a><!--<span class="sr-only">(current)</span>-->
+			  </li>
+			  <li class="nav-item">
+			  	<a id="nav-link-color" class="nav-link" href="../Resume_PayalBhujwala.pdf" download>Resume</a>
+			  </li>
+			</ul>
+		</div>
+	</nav>
 	<div class="container-fluid">
 		<header>
-			<video autoplay playsinline muted loop preload poster="images/trashtalk-bg.png">
-				<source src="trashtalk-bgmovie.mp4" />
+			<video autoplay playsinline muted loop preload>
+				<source src="[EXTRA] crowds.mp4" />
 			</video>
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 285 80" preserveAspectRatio="xMidYMid slice">
 				<defs>
 					<mask id="mask" x="0" y="0" width="100%" height="100%" >
 						<rect x="0" y="0" width="100%" height="100%" />
-						<text x="75"  y="50">Internet of Reflective Surfaces</text>
+						<text class="first-line" x="95"  y="30">INTERNET OF</text>
+						<text class="second-line" x="71"  y="45">Reflective Surfaces</text>
 					</mask>
 				</defs>
 				<rect x="0" y="0" width="100%" height="100%" />
 			</svg>
 		</header>
-		<blockquote>This project page is a work in progress, getting it ready soon!</blockquote>
+
+		<blockquote>A project combining the internet of things technology with civic engagement aims to improve public health by raising awareness and promoting disease preventative methods and tactics.</blockquote>
+
+		<div class="row">
+			<p class="summary left"><strong>Problem:</strong> How might we help give the public and healthcare professionals visibility into the health of the people in a neighbourhood in real time?</p>
+			<p class="summary right"><strong>Solution:</strong> A network of reflective surfaces that monitors users and provides a clear visualization of the people of the neighbourhood’s health conditions, provides precise aggregation and analysis of health data to health care workers and public health departments and provides concrete suggestions of health habits and actions</li></p>
+		</div>
+
+		<div class="row spacing">
+			<div class="column">
+				<img class="img-fluid" src="images/Info cardsTeam Members.jpg" alt="info-cards">
+			</div>
+			<div class="column">
+				<img class="img-fluid" src="images/Info cardsRole.jpg" alt="info-cards">
+			</div>
+			<div class="column">
+				<img class="img-fluid" src="images/Info cardsDuration.jpg" alt="info-cards">
+			</div>
+			<div class="column">
+				<img class="img-fluid" src="images/Info cardsDesign Methods.jpg" alt="info-cards">
+			</div>
+		</div>
+
+		<nav>	
+			<ul id="navbar" class="portfolio-sorting list-inline text-center">
+				<li><a href="#section1"  class="btns active">Problem Space</a></li>
+				<li><a href="#section2" class="btns">Scenarios and Speed Dating</a></li>
+				<li><a href="#section3" class="btns">Concept Video Outline</a></li>
+				<li><a href="#section4" class="btns">Video Production</a></li>
+				<li><a href="#section5" class="btns">Future Scope</a></li>
+			</ul>
+		</nav>
+
+		<section id="section1">
+			<div class="header1">Problem Space</div>
+			<div class="sub-content">
+				<!-- <img class="align-right slide-in margins-1 img-fluid image-size-cr" src="images/Original Instance.png"> -->
+
+			  	<p>We started the project by exploring different domains that involve civic engagement and could benefit from an internet of things technology.  From our brainstorming session, we narrowed down on a system for air pollution detection to raise public health awareness and a system for city transportation & tourism. </p>
+
+			</div>
+		</section>
+
+		<section id="section2">
+			<div class="header1">Scenarios and Speed Dating</div>
+			<div class="sub-content">
+				<!-- <img class="align-right slide-in margins-1 img-fluid image-size-cr" src="images/Original Instance.png"> -->
+
+			  	<p>We then went on to develop scenarios and storyboards for these domains. Some of the scenarios we developed were:
+				<ol>
+					<li><strong>Internet of Traffic Systems for Emergency Response -</strong> A connected system of emergency signals, traffic sensors, and smart traffic systems, traffic lights can be altered for these vehicles to move faster. Moreover, other cars on the road can be notified beforehand (maybe on their smart vehicle or navigation system) and be ready to yield. </li>
+				
+					<li><strong>Internet of Air Pollution Monitors for Environmental Awareness -</strong> With the use of the internet of glass surfaces for air pollution monitors, users are able to visualize the air quality of the city by mapping it directly to the view they see. </li>
+
+					<li><strong>Internet of City Sensors for City Tourism (Experience Tracking) -</strong> With the help of the internet of city tourism for experience tracking, tourists will be able to get real-time data about each attraction and have a more realistic expectation of what their experience could look like. </li>
+
+					<li><strong>Internet of Public Health Monitors for Communities -</strong> With an internet of health monitors, we can predict the rise of flu season or epidemics by thermal cameras (identify fevers), surveillance cameras and sound sensors (identify flu or other symptoms). </li>
+
+				</ol>
+
+				<p class="insight">Based on the feedback from our instructors we developed storyboards for an IoT for city tourism and an IoT for public health monitors:</p>
+
+				<p class="insight">After testing the storyboards with other people and the feedback that we received on them: </p>
+
+				<p>We decided to move forward with developing the idea for an IoT for public health monitor as it was perceived to be the most relevant idea and its  actionable goals and concrete suggestions were well-received by users.
+				</p>
+
+			</div>
+		</section>
+
+		<section id="section3">
+			<div class="header1">Concept Video Outline</div>
+			<div class="sub-content">
+				<!-- <img class="align-right slide-in margins-1 img-fluid image-size-cr" src="images/Original Instance.png"> -->
+
+			  	<p>I worked on developing the script for the concept video and we decided to create an internet of reflective surfaces where the door handles would serve as the input devices to collect user data such as temperature, heart rate, etc. and any kind of reflective surfaces indoors or outdoors as the output devices.</p>
+
+			</div>
+		</section>
+
+		<section id="section4">
+			<div class="header1">Video Production</div>
+			<div class="sub-content">
+				<!-- <img class="align-right slide-in margins-1 img-fluid image-size-cr" src="images/Original Instance.png"> -->
+
+			  	<p>Due to the pandemic situation and all academic instruction moving to working remotely we had to work on the post production entirely remotely. Having completed most of our filming before this move to working remotely. I was responsible for making the final edits on the concept video and adding the graphical overlays for our proposed internet of things technology.</p>
+
+				<p class="insight">Here are some of the challenges we faced while working on post production and how resolved them: </p>
+
+				<ol>
+					<li><strong>Maintaining footage consistency -</strong> When we began video production, we used our storyboards as a reference for filming, and encountered several difficulties in keeping consistent lighting in the footage. Therefore, we had to make quick changes to our storyboards and modify our ending while we were shooting. </li>
+				
+					<li><strong>Clarity in Storytelling -</strong> As we completed our rough cut, we noticed that our storyline lacked clarity. The footage alone could not tell our story the way we envisioned. Therefore, we modified the flow by adding in stock footage wherever there were gaps as well as we added a voiceover to better convey our concepts and tell a clear story.</li>
+
+					<li><strong>Learning Adobe After Effects -</strong> As a team, we decided to use Adobe After Effects to edit our footage because of graphics animation and overlays we planned to do. This created some difficulties because there were some learning curves in After Effects, such as video, music, and voiceover alignment. Since only one person can work on the video at a time, we ended up utilizing Zoom’s remote control feature (which allows other users to control your screen) to collaborate on some of the minor edits together. </li>
+				</ol>
+			</div>
+		</section>
+
+		<section id="section5">
+			<div class="header1">Future Scope</div>
+			<div class="sub-content">
+				<!-- <img class="align-right slide-in margins-1 img-fluid image-size-cr" src="images/Original Instance.png"> -->
+
+			  	<p>Given the current pandemic, a system like this could be of immense help to public health departments and residents in giving them more visibility into the health of a neighbourhood and help track the health of its residents. However, in terms of scaling this system to a more personal level, it could be also implemented as wearable technology, like smartwatches and activity trackers. to monitor body temperatures and other vitals accurately and aggregate data effectively. </p>
+
+			</div>
+		</section>
+
 	</div>
 	<footer>
 		<div class="projects-footer">
