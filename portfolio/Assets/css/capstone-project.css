@@ -68,6 +68,7 @@ blockquote {
 }
 strong {
   font-weight: 800;
+  color: #379BD7;
 }
 .row{
   width: 100%;
@@ -92,14 +93,14 @@ strong {
 }
 .left{
   float: left;
-  width: 60%;
+  width: 50%;
   padding-right: 10%;
 }
 
 .column {
   float: left;
-  width: 20%;
-  padding: 2%;
+  width: 16.66%;
+  /*padding: 2%;*/
 }
 .spacing{
   margin-bottom: 20%;
@@ -186,7 +187,25 @@ strong {
 .last {
   margin-bottom: 30%;
 }
-
+.column-6 {
+  width: 42%;
+  float: left;
+}
+.column-3 {
+  width: 23%;
+  float: left;
+}
+.column-4 {
+  width: 30%;
+  float: left;
+}
+.column-2{
+  width:50%;
+}
+.proj-link {
+  color: #379BD7;
+  text-decoration: none;
+}
 
 /*CSS for Image slide in*/
 .align-left {
@@ -238,42 +257,148 @@ strong {
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 50vh;/*change it to 30vh for mobile version*/
 }
-.container-general .gallery-wrap .item {
+.container-general .gallery-wrap .item-1 {
   flex: 1;
   height: 100%;
   background-position: center;
   background-size: cover;
   background-repeat: none;
   transition: all 0.8s ease;
+  height: 23vh;/*change it to 5vh for mobile version*/
 }
-.container-general .gallery-wrap .item:hover {
+.container-general .gallery-wrap .item-1:hover {
   flex: 7;
 }
-.wrap-effect-3 .item:hover {
+.wrap-effect-3 .item-1:hover {
   animation: rotate 0.7s ease-in-out both;
   border-radius: 10px;
   border: 1px solid gray;
 }
-.wrap-effect-3 .item:first-of-type {
-  background-image: url("../../After Us/images/2.0.jpg");
+.wrap-effect-3 .item-1:first-of-type {
+  background-image: url("../../Capstone Project/images/Insightsinsight-kickoff-1.jpg");
 }
-.wrap-effect-3 .item:nth-of-type(2) {
-  background-image: url("../../After Us/images/2.1.jpg");
+.wrap-effect-3 .item-1:nth-of-type(2) {
+  background-image: url("../../Capstone Project/images/Insightsinsight-kickoff-2.jpg");
 }
-.wrap-effect-3 .item:nth-of-type(3) {
-  background-image: url("../../After Us/images/2.2.jpg");
+.wrap-effect-3 .item-1:nth-of-type(3) {
+  background-image: url("../../Capstone Project/images/Insightsinsight-kickoff-3.jpg");
 }
-.wrap-effect-3 .item:nth-of-type(4) {
-  background-image: url("../../After Us/images/2.3.jpg");
+
+.container-general .gallery-wrap .item-2 {
+  flex: 1;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  transition: all 0.8s ease;
+  height: 18vh;/*change it to 4vh for mobile version*/
 }
-.wrap-effect-3 .item:nth-of-type(5) {
-  background-image: url("../../After Us/images/2.4.jpg");
+.container-general .gallery-wrap .item-2:hover {
+  flex: 7;
 }
-.wrap-effect-3 .item:last-of-type {
-  background-image: url("../../After Us/images/2.5.jpg");
+.wrap-effect-3 .item-2:hover {
+  animation: rotate 0.7s ease-in-out both;
+  border-radius: 10px;
+  border: 1px solid gray;
 }
+.wrap-effect-3 .item-2:first-of-type {
+  background-image: url("../../Capstone Project/images/Insightsinsight-pr-1.jpg");
+}
+.wrap-effect-3 .item-2:nth-of-type(2) {
+  background-image: url("../../Capstone Project/images/Insightsinsight-pr-2.jpg");
+}
+.wrap-effect-3 .item-2:nth-of-type(3) {
+  background-image: url("../../Capstone Project/images/Insightsinsight-pr-3.jpg");
+}
+.wrap-effect-3 .item-2:nth-of-type(4) {
+  background-image: url("../../Capstone Project/images/Insightsinsight-pr-4.jpg");
+}
+
+.container-general .gallery-wrap .item-3 {
+  flex: 1;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  transition: all 0.8s ease;
+  height: 23vh;/*change it to 5vh for mobile version*/
+}
+.container-general .gallery-wrap .item-3:hover {
+  flex: 7;
+}
+.wrap-effect-3 .item-3:hover {
+  animation: rotate 0.7s ease-in-out both;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+.wrap-effect-3 .item-3:first-of-type {
+  background-image: url("../../Capstone Project/images/Insightsinsight-sr-1.jpg");
+}
+.wrap-effect-3 .item-3:nth-of-type(2) {
+  background-image: url("../../Capstone Project/images/Insightsinsight-sr-2.jpg");
+}
+.wrap-effect-3 .item-3:nth-of-type(3) {
+  background-image: url("../../Capstone Project/images/Insightsinsight-sr-3.jpg");
+}
+
+.container-general .gallery-wrap .item-4 {
+  flex: 1;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  transition: all 0.8s ease;
+  height: 18vh;/*change it to 5vh for mobile version*/
+}
+.container-general .gallery-wrap .item-4:hover {
+  flex: 7;
+}
+.wrap-effect-3 .item-4:hover {
+  animation: rotate 0.7s ease-in-out both;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+.wrap-effect-3 .item-4:first-of-type {
+  background-image: url("../../Capstone Project/images/Insightsuser-needs-1.jpg");
+}
+.wrap-effect-3 .item-4:nth-of-type(2) {
+  background-image: url("../../Capstone Project/images/Insightsuser-needs-2.jpg");
+}
+.wrap-effect-3 .item-4:nth-of-type(3) {
+  background-image: url("../../Capstone Project/images/Insightsuser-needs-3.jpg");
+}
+.wrap-effect-3 .item-4:nth-of-type(4) {
+  background-image: url("../../Capstone Project/images/Insightsuser-needs-4.jpg");
+}
+
+.container-general .gallery-wrap .item-5 {
+  flex: 1;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  transition: all 0.8s ease;
+  height: 23vh;/*change it to 5vh for mobile version*/
+}
+.container-general .gallery-wrap .item-5:hover {
+  flex: 7;
+}
+.wrap-effect-3 .item-5:hover {
+  animation: rotate 0.7s ease-in-out both;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+.wrap-effect-3 .item-5:first-of-type {
+  background-image: url("../../Capstone Project/images/Insightsuser-need-val-1.jpg");
+}
+.wrap-effect-3 .item-5:nth-of-type(2) {
+  background-image: url("../../Capstone Project/images/Insightsuser-need-val-2.jpg");
+}
+.wrap-effect-3 .item-5:nth-of-type(3) {
+  background-image: url("../../Capstone Project/images/Insightsuser-need-val-3.jpg");
+}
+
 @keyframes rotate {
   0% {
     transform: rotate(0deg) translate3d(0, 0, 0);

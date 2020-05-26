@@ -43,7 +43,7 @@ svg > rect {
 }
 .column {
   float: left;
-  width: 20%;
+  width: 16.66%;
 }
 .spacing-nav{
   margin-bottom: 50%;
@@ -64,6 +64,7 @@ blockquote {
 }
 strong {
   font-weight: 800;
+  color: #FF534F;
 }
 
 /*CSS for Nav Bar*/
@@ -146,10 +147,22 @@ strong {
 .insight{
   font-size: 22px;
   margin-top: 10%;/*5% and 2%*/
-    font-weight: 700;
+  font-weight: 700;
 }
 .last {
   margin-bottom: 30%;
+}
+.column-2 {
+  width: 47%;
+}
+.row{
+  width: 100%;
+  margin: 0;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 /*CSS for Image slide in*/
@@ -180,9 +193,7 @@ strong {
   opacity: 1;
   transform: translateX(0%) scale(1);
 }
-.color-bold{
-  color: #FF534F;
-}
+
 /*CSS for images*/
 .margins-1 {
   margin-left: 3%;

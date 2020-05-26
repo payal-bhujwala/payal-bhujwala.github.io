@@ -183,6 +183,9 @@ strong {
 .last {
   margin-bottom: 30%;
 }
+.column-2 {
+  width: 45%;
+}
 
 /*CSS for Image slide in*/
 .align-left {
