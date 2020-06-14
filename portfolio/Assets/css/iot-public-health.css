@@ -69,6 +69,9 @@ strong {
 .row{
   width: 100%;
   margin: 0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 .row::after {
   content: "";
@@ -184,7 +187,15 @@ strong {
   margin-bottom: 30%;
 }
 .column-2 {
-  width: 45%;
+  width: 50%;
+}
+.vid-prod{
+  max-width: 22%;
+  padding-right: 1%;
+  max-height: 200px; /*100px for mobile*/
+}
+.challenges{
+  padding: 2%;
 }
 
 /*CSS for Image slide in*/
